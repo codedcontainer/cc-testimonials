@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Plugin Name: CC Testimonials
+ * Description: Creates testimonials formatted for Google rich snippets. [testimonial]testimonial text [star rating=#][/testimonial]
+ * Version: .1
+ * Author: Jason Utt
+ * Author URI: www.codedcontainer
+ * License: Attribution-NoDerivatives 4.0 International
+ */
+
+?>
+
+
+<?php
+
+// [star rating="5"]
+function starRating_func( $atts ) {
+    $a = shortcode_atts( array(
+        'rating' => 0
+    ), $atts );
+    for( $i = 0; $i <= $a['rating']; $i++)
+    {
+    	print "Working";
+    }
+}
+add_shortcode( 'star', 'starRating_func' );
+
+function testimonial_func($atts){
+	return {
+		"test";
+	}
+}
+
+add_shortcode('testimonial_func', 'testimonial_func');
+?>
+
+<html>
+	<blockquote style="background:url('blockquote.png') 15px 20px no-repeat; padding: 15px 20px 10px 80px; margin: 10px; color: #555; font-style-italic; font-family: Georgia, serif; height: 109px; width: 400px; box-shadow: 1px 1px 10px">
+			<p>Testimonial sample</p>
+			<p style="text-align: right;">
+				-Shirley Frye | 03-29-14
+			<br>
+			<i class="icon-star"></i>
+			<i class="icon-star"></i>
+			</p>
+	</blockquote>
+
+
+</html>
