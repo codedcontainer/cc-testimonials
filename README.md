@@ -6,7 +6,7 @@ A WordPress plugin that allows you to write schema.org specific testimonials usi
 `[testimonial author="Author Name" rating="2"  maxRating ="5" date="03-13-90"]Sample text testimonial![/testimonial]`
 
 ## Change Log ##
-### 07-08-91 ###
+### 07-08-19 ###
 - Added max star rating attribute with new stars
 - Added schema.org tags
 
